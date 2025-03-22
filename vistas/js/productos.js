@@ -248,7 +248,7 @@ $(".tablaProductos tbody").on("click", "button.btnEliminarProducto", function(){
         }).then(function(result) {
         if (result.value) {
 
-        	window.location = "index.php?ruta=productos&idProducto="+idProducto+"&imagen="+imagen+"&codigo="+codigo;
+        	window.location = "productos?ruta=productos&idProducto="+idProducto+"&imagen="+imagen+"&codigo="+codigo;
 
         }
 

@@ -52,7 +52,7 @@ if($_SESSION["perfil"] == "Especial"){
            <th>Fecha del evento</th>
            <th>Tipo de evento</th>
            <th>Tipo de banquete</th> 
-           <th>Numero de banquetes</th>
+           <th>Numero de platos</th>
            <th>Comentarios</th>
            <th>Fecha de Registro</th>
          </tr> 

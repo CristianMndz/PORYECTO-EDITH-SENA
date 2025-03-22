@@ -4,7 +4,7 @@
     
     <h1>
       
-      Administrar tipos de banquetes
+      Administrar tipos
     
     </h1>
 
@@ -12,7 +12,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar tipos de banquetes</li>
+      <li class="active">Administrar tipos </li>
     
     </ol>
 
@@ -26,7 +26,7 @@
   
         <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCategoria">
           
-          Agregar tipo de banquete
+          Agregar 
 
         </button>
 
@@ -41,7 +41,7 @@
          <tr>
            
            <th style="width:10px">#</th>
-           <th>Tipo de Banquete</th>
+           <th>Tipo de comida</th>
            <th>Acciones</th>
 
          </tr> 
@@ -142,7 +142,7 @@ MODAL AGREGAR USUARIO
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar banquete</h4>
+          <h4 class="modal-title">Agregar comidas</h4>
 
         </div>
 
@@ -180,7 +180,7 @@ MODAL AGREGAR USUARIO
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar banquete</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
 
         </div>
 

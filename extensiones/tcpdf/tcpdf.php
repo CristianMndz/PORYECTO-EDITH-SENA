@@ -1,13 +1,5 @@
 <?php
 
-t.</li>
- * </ul>
- * Tools to encode your unicode fonts are on fonts/utils directory.</p>
- * @package com.tecnick.tcpdf
- * @author Nicola Asuni
- * @version 6.2.6
- */
-
 // TCPDF configuration
 require_once(dirname(__FILE__).'/tcpdf_autoconfig.php');
 // TCPDF static font methods and data

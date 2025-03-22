@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/../modelos/productos.modelo.php";
+
 class ControladorProductos{
 
 	//MOSTRAR PRODUCTOS
@@ -30,7 +32,7 @@ class ControladorProductos{
 		   		//VALIDAR IMAGEN
 				
 
-			   	$ruta = "vistas/img/productos/default/anonymous.png";
+				$ruta = "vistas/img/productos/";
 
 			   	if(isset($_FILES["nuevaImagen"]["tmp_name"])){
 
@@ -174,7 +176,7 @@ class ControladorProductos{
 					//PRIMERO PREGUNTAMOS SI EXISTE OTRA IMAGEN EN LA BD
 				
 
-					if(!empty($_POST["imagenActual"]) && $_POST["imagenActual"] != "vistas/img/productos/default/anonymous.png"){
+					if(!empty($_POST["imagenActual"]) && $_POST["imagenActual"] != "vistas/img/productos/3.jpg"){
 
 						unlink($_POST["imagenActual"]);
 
@@ -188,7 +190,7 @@ class ControladorProductos{
 					//DE ACUERDO AL TIPO DE IMAGEN APLICAMOS LAS FUNCIONES POR DEFECTO DE PHP
 					
 
-					if($_FILES["editarImagen"]["type"] == "image/jpeg"){
+					if($_FILES["editarImagen"]["type"] == "image/jpg"){
 
 						
 					//GUARDAMOS LA IMAGEN EN EL DIRECTORIO
@@ -297,7 +299,7 @@ class ControladorProductos{
 			$tabla ="productos";
 			$datos = $_GET["idProducto"];
 
-			if($_GET["imagen"] != "" && $_GET["imagen"] != "vistas/img/productos/default/anonymous.png"){
+			if($_GET["imagen"] != "" && $_GET["imagen"] != "vistas/img/productos/1.jpg"){
 
 				unlink($_GET["imagen"]);
 				rmdir('vistas/img/productos/'.$_GET["codigo"]);

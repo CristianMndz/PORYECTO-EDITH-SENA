@@ -94,6 +94,7 @@ button,select{
 }
 button,html input[type="button"],input[type="reset"],input[type="submit"]{
     -webkit-appearance:button;
+    appearance:button;
     cursor:pointer
 }
 button[disabled],html input[disabled]{
@@ -117,12 +118,14 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
 }
 input[type="search"]{
     -webkit-appearance:textfield;
+    appearance:textfield;
     -webkit-box-sizing:content-box;
     -moz-box-sizing:content-box;
     box-sizing:content-box
 }
 input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{
-    -webkit-appearance:none
+    -webkit-appearance:none;
+    appearance:none
 }
 fieldset{
     border:1px solid #c0c0c0;
@@ -2298,7 +2301,8 @@ textarea.form-control{
     height:auto
 }
 input[type="search"]{
-    -webkit-appearance:none
+    -webkit-appearance:none;
+    appearance:none
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
     input[type="date"].form-control,input[type="time"].form-control,input[type="datetime-local"].form-control,input[type="month"].form-control{
@@ -3882,7 +3886,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
     background-color:#888
 }
 .navbar-default .navbar-collapse,.navbar-default .navbar-form{
-    /*border-color:#e7e7e7*/
+    border-color:#e7e7e7
 }
 .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus{
     background-color:#e7e7e7;
@@ -4960,7 +4964,8 @@ button.close{
     cursor:pointer;
     background:transparent;
     border:0;
-    -webkit-appearance:none
+    -webkit-appearance:none;
+    appearance:none
 }
 .modal-open{
     overflow:hidden

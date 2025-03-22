@@ -39,7 +39,7 @@
 				<a href="categorias">
 
 					<i class="fa fa-th"></i>
-					<span>Tipos de Banquetes</span>
+					<span>Tipos de Menú</span>
 
 				</a>
 

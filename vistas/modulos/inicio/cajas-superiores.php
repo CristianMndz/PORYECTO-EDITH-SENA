@@ -54,7 +54,7 @@ $totalProductos = count($productos);
     
       <h3><?php echo number_format($totalCategorias); ?></h3>
 
-      <p>Banquetes</p>
+      <p>Listar productos</p>
     
     </div>
     

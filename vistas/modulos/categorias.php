@@ -20,7 +20,7 @@ if($_SESSION["perfil"] == "Vendedor"){
     
     <h1>
       
-      Administrar tipos de banquetes
+      Administrar tipos de productos
     
     </h1>
 
@@ -28,7 +28,7 @@ if($_SESSION["perfil"] == "Vendedor"){
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar tipos de banquetes</li>
+      <li class="active">Administrar tipos de productos</li>
     
     </ol>
 
@@ -42,8 +42,7 @@ if($_SESSION["perfil"] == "Vendedor"){
   
         <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCategoria">
           
-          Agregar tipo de banquete
-
+          Agregar tipo de productos
         </button>
 
       </div>
@@ -57,7 +56,7 @@ if($_SESSION["perfil"] == "Vendedor"){
          <tr>
            
            <th style="width:10px">#</th>
-           <th>Tipo de Banquete</th>
+           <th>Tipo de productos</th>
            <th>Acciones</th>
 
          </tr> 
@@ -134,7 +133,7 @@ MODAL AGREGAR CATEGORÍA
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar banquete</h4>
+          <h4 class="modal-title">Agregar productos</h4>
 
         </div>
 
@@ -154,7 +153,7 @@ MODAL AGREGAR CATEGORÍA
               
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Ingresar tipo de banquete" required>
+                <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Ingresar tipo " required>
 
               </div>
 
@@ -172,7 +171,7 @@ MODAL AGREGAR CATEGORÍA
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar banquete</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
 
         </div>
 
@@ -211,7 +210,7 @@ MODAL EDITAR CATEGORÍA
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Editar banquete</h4>
+          <h4 class="modal-title">Editar tipos</h4>
 
         </div>
 

@@ -1,7 +1,5 @@
 <?php
 
-
-
 define ('K_BLANK_IMAGE', '_blank.png');
 
 
@@ -19,7 +17,7 @@ define ('PDF_AUTHOR', 'TCPDF');
 define ('PDF_HEADER_TITLE', 'TCPDF Example');
 
 
-define ('PDF_HEADER_STRING', "by Nicola Asuni - Tecnick.com\nwww.tcpdf.org");
+define ('PDF_HEADER_STRING', "");
 
 
 define ('PDF_UNIT', 'mm');

@@ -8,7 +8,7 @@
   "author": "Cristian M",
   "license": "ISC",
   "keywords": [],
-  "description": "Sistema de venta e inventario para restaurantes, quien inicialmente se llamaba ALICE y pasó a llamarse EDITH",
+  "description": "Sistema de venta Y inventario para restaurantes, quien inicialmente se llamaba ALICE y pasó a llamarse EDITH",
   "dependencies": {
     "react-scripts": "^3.0.1"
   }

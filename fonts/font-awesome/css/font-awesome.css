@@ -1,9 +1,4 @@
-/*!
- *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-/* FONT PATH
- * -------------------------- */
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
@@ -20,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
 }
-/* makes the font 33% larger relative to the icon container */
+/* Hace que la fuente sea un 33% más grande en relación al contenedor del ícono */
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
@@ -166,8 +161,7 @@
 .fa-inverse {
   color: #ffffff;
 }
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-   readers do not read off random characters that represent icons */
+/* Font Awesome utiliza el Área de Uso Privado de Unicode (PUA) para asegurar que los lectores de pantalla no lean caracteres aleatorios que representan íconos */
 .fa-glass:before {
   content: "\f000";
 }

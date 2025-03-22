@@ -1,80 +1,48 @@
- <header class="main-header">
- 	
-	<!--=====================================
-	LOGOTIPO
-	======================================-->
+<header class="main-header">
+	<!-- Logo -->
     <a href="#" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>B.</b> B</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>B.</b> BOLAÑOS</span>
+        <!-- Mini logo para la barra lateral -->
+        <span class="logo-mini">
+            <img src="img\Otros\Logo.jpg" class="img-responsive" alt="Logo Mini" style="padding: 10px;">
+        </span>
+        <!-- Logo para dispositivos móviles y estado normal -->
+        <span class="logo-lg">
+            <img src="img\Otros\Logo.jpg" class="img-responsive" alt="Logo Principal" style="padding: 10px;">
+        </span>
     </a>
 
-	<!--=====================================
-	BARRA DE NAVEGACIÓN
-	======================================-->
-	<nav class="navbar navbar-static-top" role="navigation">
-		
-		<!-- Botón de navegación -->
+    <!--=====================================
+    BARRA DE NAVEGACIÓN
+    ======================================-->
+    <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Botón de navegación -->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
 
-	 	<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        	
-        	<span class="sr-only">Toggle navigation</span>
-      	
-      	</a>
+        <!-- Perfil de usuario -->
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <?php
+                        // Mostrar la foto del usuario o una imagen por defecto
+                        $fotoUsuario = !empty($_SESSION["foto"]) ? $_SESSION["foto"] : "vistas/img/usuarios/default/anonymous.png";
+                        echo '<img src="' . htmlspecialchars($fotoUsuario) . '" class="user-image" alt="Foto de perfil">';
+                        ?>
+                        <span class="hidden-xs"><?php echo htmlspecialchars($_SESSION["nombre"]); ?></span>
+                    </a>
 
-		<!-- perfil de usuario -->
-
-		<div class="navbar-custom-menu">
-				
-			<ul class="nav navbar-nav">
-				
-				<li class="dropdown user user-menu">
-					
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-					<?php
-
-					if($_SESSION["foto"] != ""){
-
-						echo '<img src="'.$_SESSION["foto"].'" class="user-image">';
-
-					}else{
-
-
-						echo '<img src="vistas/img/usuarios/default/anonymous.png" class="user-image">';
-
-					}
-
-
-					?>
-						
-						<span class="hidden-xs"><?php  echo $_SESSION["nombre"]; ?></span>
-
-					</a>
-
-					<!-- Dropdown-toggle -->
-
-					<ul class="dropdown-menu">
-						
-						<li class="user-body">
-							
-							<div class="pull-right">
-								
-								<a href="salir" class="btn btn-default btn-flat">Cerrar Sesión</a>
-
-							</div>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-			</ul>
-
-		</div>
-
-	</nav>
-
- </header>
+                    <!-- Menú desplegable -->
+                    <ul class="dropdown-menu">
+                        <li class="user-body">
+                            <div class="pull-right">
+                                <a href="salir" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
