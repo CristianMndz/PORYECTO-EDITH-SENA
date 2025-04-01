@@ -17,7 +17,7 @@ $(".nuevaFoto").change(function(){
 
   		 swal({
 		      title: "Error al subir la imagen",
-		      text: "¡La imagen debe estar en formato JPG o PNG!",
+		      text: "¡La imagen debe estar en formato JPEG o PNG!",
 		      type: "error",
 		      confirmButtonText: "¡Cerrar!"
 		    });

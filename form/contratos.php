@@ -81,7 +81,7 @@ require('../mail/conexion.php');
 											<div class="form-group col-sm-6">
 												<div class="help-block with-errors"></div>
 												<select name="banquete" id="banquete" class="form-control" required data-error="Tipo de comidas">
-													<option value="">Tipo de banquete</option>
+													<option value="">¿Qué comida quieres?</option>
 													<?php
 														$extraer_categorias = "SELECT categoria FROM categorias";
 														$extraer_datos = mysqli_query($conn, $extraer_categorias);
@@ -107,7 +107,7 @@ require('../mail/conexion.php');
 											<div class="form-group last col-sm-12">
 												<button type="submit" id="submit" class="btn btn-custom"><i class="fa fa-envelope"></i> Enviar</button>
 											</div>
-											<span class="sub-text">* Campos requeridos</span>
+											<span class="sub-text">*Oye, no te preocupes, tus datos están seguros con nosotros.</span>
 											<div class="clearfix"></div>
 										</div>
 									</form>

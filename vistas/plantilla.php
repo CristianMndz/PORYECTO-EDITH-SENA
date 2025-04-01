@@ -20,7 +20,7 @@ require_once "modelos/productos.modelo.php";
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" conten="IE=edge">
 
-  <title>Proyecto SENA-EDITH</title>
+  <title>Proyecto SENA-Food Truck</title>
 
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
